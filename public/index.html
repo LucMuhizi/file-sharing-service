@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>File Sharing Service</title>
+  </head>
+  <body>
+    <h1>File Sharing Service</h1>
+
+    <!-- Upload Form -->
+    <h2>Upload File</h2>
+    <form id="uploadForm" enctype="multipart/form-data">
+      <input type="file" id="fileInput" name="file" />
+      <button type="button" onclick="uploadFile()">Upload</button>
+    </form>
+    <div id="uploadStatus"></div>
+
+    <!-- List Files -->
+    <h2>Available Files</h2>
+    <button onclick="listFiles()">Refresh List</button>
+    <ul id="fileList"></ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>
